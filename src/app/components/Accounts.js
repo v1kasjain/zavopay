@@ -30,7 +30,7 @@ function Accounts() {
       {[
         accounts.map((info, index) => {
           console.log(index);
-          return <AccountCard info={info} index={index} />;
+          return <AccountCard info={info} index={index} key={index}/>;
         }),
       ]}
     </Flex>
